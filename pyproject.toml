@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "design_smell_fun"
+version = "0.0.1"
+description = "Have fun exploring solutions of smell, a collection of antipatterns"
+authors = [ "Pierre Schnizer"]
+license = "GPL-3.0"
+
+homepage = "https://github.com/PierreSchnizer/python-design-smell-fun/"
+documentation = "https://github.com/PierreSchnizer/python-design-smell-fun/"
+repository = "https://github.com/PierreSchnizer/python-design-smell-fun.git"
+keywords = []
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+Sphinx = { version = "*", optional = true }
+sphinx-rtd-theme = { version = "*", optional = true }
+sphinxcontrib-napoleon = { version = "*", optional = true }
+
+[tool.poetry.extras]
+docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]
